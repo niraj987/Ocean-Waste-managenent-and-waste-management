@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <section id="waste-management">
+            <h2>Waste Management</h2>
+            <p>We are committed to responsible waste management practices. Our approach focuses on the three R's: Reduce, Reuse, and Recycle.</p>
+      <div class="solid Waste"><h3>Solid Waste</h3>
+            <ol>
+                <ul></ul>
+
+            </ol>
+            </div>
+            <h3>Liquid Waste</h3>
+            <p>Our liquid waste management involves proper treatment and disposal to prevent contamination of water sources. We also promote water conservation practices.</p>
+            <h3>Gas Waste</h3>
+            <p>We strive to reduce greenhouse gas emissions through energy-efficient practices and the use of renewable energy sources. We also monitor and manage any gas waste produced in our operations.</p>
+        </section>
+    </main>
+    <footer>
+        <title>Login Page</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+			margin: 50px auto;
+			width: 300px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form id="loginForm" method="post" action="login.php">
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" required>
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" required>
+		<input type="submit" value="Log In">
+	</form>
+	<script>
+		document.getElementById("loginForm").addEventListener("submit", function(event) {
+			if (!document.getElementById("email").value || !document.getElementById("password").value) {
+				alert("Please fill in all required fields.");
+				event.preventDefault();
+			}
+		});
+	</script>
+    </footer>
+</body>
+</html>
